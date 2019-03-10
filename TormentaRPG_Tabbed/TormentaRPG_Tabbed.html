@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+<!-- original lines 88,99,110,121,132 and 143 were using the wrong formula on the calculation, adding half of the character's level, but on the basic rules, on TormentaRPG(1st esdition) pg 81 says that it uses only 1d20+ability mod. -->
 <div class="sheet-container">
     <div class="sheet-header">
     <div class="sheet-3-colrow">
@@ -85,7 +85,7 @@
                     </div>
                     <div class="sheet-row" style="padding-top: 2px">
                         <div class="sheet-col">
-                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Força}} {{rolagem=[[1d20+@{for_mod}+(@{metade_nivel})]]}}"><div class="sheet-block" style="font-size: 1.2em; width: 40px"><span>FOR</span><span style="font-size:0.6em; font-weight: normal;"><br>Força</span></div>
+                          <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Força}} {{rolagem=[[1d20+@{for_mod}]]}}"><div class="sheet-block" style="font-size: 1.2em; width: 40px"><span>FOR</span><span style="font-size:0.6em; font-weight: normal;"><br>Força</span></div>
                         </button></div>
                         <div class="sheet-col">
                             <div class="sheet-value" style="margin-left:6px"><input type="text" name="attr_for" title="@{for}" value="10"></div>
@@ -96,7 +96,7 @@
                     </div>
                     <div class="sheet-row" style="padding-top: 6px">
                         <div class="sheet-col">
-                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Destreza}} {{rolagem=[[1d20+@{des_mod}+(@{metade_nivel})]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px;"><span>DES</span><span style="font-size:0.6em; font-weight: normal;"><br>Destreza</span></div>
+                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Destreza}} {{rolagem=[[1d20+@{des_mod}]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px;"><span>DES</span><span style="font-size:0.6em; font-weight: normal;"><br>Destreza</span></div>
                         </button></div>
                         <div class="sheet-col">
                             <div class="sheet-value" style="margin-left:6px"><input type="text" name="attr_des" title="@{des}" value="10"></div>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="sheet-row" style="padding-top: 6px">
                         <div class="sheet-col">
-                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Constituição}} {{rolagem=[[1d20+@{con_mod}+(@{metade_nivel})]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px; padding: auto;"><span>CON</span><span style="font-size:0.6em; font-weight: normal;"><br>Constituição</span></div>
+                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Constituição}} {{rolagem=[[1d20+@{con_mod}]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px; padding: auto;"><span>CON</span><span style="font-size:0.6em; font-weight: normal;"><br>Constituição</span></div>
                         </button></div>
                         <div class="sheet-col">
                             <div class="sheet-value" style="margin-left:6px"><input type="text" name="attr_con" title="@{con}" value="10"></div>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="sheet-row" style="padding-top: 6px">
                         <div class="sheet-col">
-                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Inteligência}} {{rolagem=[[1d20+@{int_mod}+(@{metade_nivel})]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px; padding: auto;"><span>INT</span><span style="font-size:0.6em; font-weight: normal;"><br>Inteligência</span></div>
+                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Inteligência}} {{rolagem=[[1d20+@{int_mod}]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px; padding: auto;"><span>INT</span><span style="font-size:0.6em; font-weight: normal;"><br>Inteligência</span></div>
                     </button></div>
                     <div class="sheet-col">
                         <div class="sheet-value" style="margin-left:6px"><input type="text" name="attr_int" title="@{int}" value="10"></div>
@@ -129,7 +129,7 @@
                     </div>
                     <div class="sheet-row" style="padding-top: 6px">
                         <div class="sheet-col">
-                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Sabedoria}} {{rolagem=[[1d20+@{sab_mod}+(@{metade_nivel})]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px; padding: auto;"><span>SAB</span><span style="font-size:0.6em; font-weight: normal;"><br>Sabedoria</span></div>
+                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Sabedoria}} {{rolagem=[[1d20+@{sab_mod}]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px; padding: auto;"><span>SAB</span><span style="font-size:0.6em; font-weight: normal;"><br>Sabedoria</span></div>
                         </button></div>
                         <div class="sheet-col">
                             <div class="sheet-value" style="margin-left:6px"><input type="text" name="attr_sab" title="@{sab}" value="10"></div>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="sheet-row" style="padding-top: 6px">
                         <div class="sheet-col">
-                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Carisma}} {{rolagem=[[1d20+@{car_mod}+(@{metade_nivel})]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px; padding: auto;"><span>CAR</span><span style="font-size:0.6em; font-weight: normal;"><br>Carisma</span></div>
+                            <button type="roll" value="&{template:trpg} {{nome=@{Char_Name}}} {{teste=Carisma}} {{rolagem=[[1d20+@{car_mod}]]}}"><div class="sheet-block" style="font-size: 1.2em;width:40px; padding: auto;"><span>CAR</span><span style="font-size:0.6em; font-weight: normal;"><br>Carisma</span></div>
                         </button></div>
                         <div class="sheet-col">
                             <div class="sheet-value" style="margin-left:6px"><input type="text" name="attr_car" title="@{car}" value="10"></div>
